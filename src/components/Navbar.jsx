@@ -1,0 +1,76 @@
+const NAV_ITEMS = [
+  {
+    id: "marco",
+    label: "Marco Conceptual",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+      </svg>
+    ),
+    description: "Teoría y fundamentos",
+  },
+  {
+    id: "ejemplos",
+    label: "Aplicaciones",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+      </svg>
+    ),
+    description: "Ingeniería aplicada",
+  },
+  {
+    id: "laboratorio",
+    label: "Laboratorio",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 3h6M9 3v6l-5 9a2 2 0 001.8 3h12.4A2 2 0 0020 18l-5-9V3"/>
+      </svg>
+    ),
+    description: "Simulaciones interactivas",
+  },
+  {
+    id: "ejercicios",
+    label: "Ejercicios",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+      </svg>
+    ),
+    description: "Práctica guiada",
+  },
+];
+
+export default function Navbar({ activePage, onNavigate }) {
+  return (
+    <header className="navbar">
+      <div className="navbar-brand">
+        <div className="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div className="brand-text">
+          <span className="brand-title">Ondas & Oscilaciones</span>
+          <span className="brand-sub">Calor y Ondas · Cap. 9</span>
+        </div>
+      </div>
+
+      <nav className="navbar-nav">
+        {NAV_ITEMS.map((item) => (
+          <button
+            key={item.id}
+            className={`nav-item ${activePage === item.id ? "nav-item--active" : ""}`}
+            onClick={() => onNavigate(item.id)}
+            title={item.description}
+          >
+            <span className="nav-icon">{item.icon}</span>
+            <span className="nav-label">{item.label}</span>
+            {activePage === item.id && <span className="nav-indicator" />}
+          </button>
+        ))}
+      </nav>
+    </header>
+  );
+}
