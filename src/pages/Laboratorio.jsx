@@ -1,4 +1,4 @@
-import PagePlaceholder from "../components/Pageplaceholder";
+import PagePlaceholder from "../components/PagePlaceholder";
 
 const icon = (
   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
