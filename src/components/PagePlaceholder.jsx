@@ -16,7 +16,7 @@ export default function PagePlaceholder({ icon, title, subtitle, sections = [] }
                 <h3 className="psc-title">{s.title}</h3>
                 <p className="psc-desc">{s.desc}</p>
               </div>
-              <div className="psc-status">Próximamente</div>
+              <div className="psc-status">Ver mas</div>
             </div>
           ))}
         </div>

@@ -11,6 +11,7 @@ const sections = [
   { title: "Ley de Hooke", desc: "Problemas de deformación y constante de resorte." },
   { title: "Péndulo simple", desc: "Aplicación de las leyes del péndulo a casos prácticos." },
   { title: "Reto de ingeniería", desc: "Problema integrador con todos los conceptos del capítulo." },
+  { title: "Análisis de Resonancia", desc: "Identificación de frecuencias naturales y amplificación de amplitud." },
 ];
 
 export default function Ejercicios() {

@@ -10,7 +10,9 @@ const sections = [
   { title: "Ingeniería Civil", desc: "Análisis sísmico, puentes colgantes y vibraciones estructurales." },
   { title: "Ingeniería Mecánica", desc: "Sistemas de amortiguación, motores y resonancia mecánica." },
   { title: "Ingeniería Electrónica", desc: "Circuitos LC, filtros y osciladores de cuarzo." },
-  { title: "Ingeniería Biomédica", desc: "Ultrasonido médico, marcapasos y ondas cerebrales." },
+  { title: "Ingeniería Marino Costera", desc: "Propagación de olas, tsunamis y acústica submarina." },
+  { title: "Ingeniería Industrial", desc: "Vibraciones en maquinaria, control de ruido y optimización de procesos." },
+  { title: "Ingeniería de Sistemas", desc: "Procesamiento de señales, comunicaciones y transmisión de datos." },
 ];
 
 export default function EjemplosIngenieria() {

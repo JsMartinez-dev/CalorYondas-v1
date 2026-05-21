@@ -304,6 +304,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  place-items: stretch;
+  justify-items: stretch;
 }
 
 .placeholder-section-card {
