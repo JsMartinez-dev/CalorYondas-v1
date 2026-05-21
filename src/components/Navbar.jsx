@@ -52,8 +52,8 @@ export default function Navbar({ activePage, onNavigate }) {
           </svg>
         </div>
         <div className="brand-text">
-          <span className="brand-title">Ondas & Oscilaciones</span>
-          <span className="brand-sub">Calor y Ondas · Cap. 9</span>
+          <span className="brand-title">Ondas & Ondulaciones</span>
+          <span className="brand-subtitle">Calor y Ondas</span>
         </div>
       </div>
 
@@ -67,7 +67,6 @@ export default function Navbar({ activePage, onNavigate }) {
           >
             <span className="nav-icon">{item.icon}</span>
             <span className="nav-label">{item.label}</span>
-            {activePage === item.id && <span className="nav-indicator" />}
           </button>
         ))}
       </nav>

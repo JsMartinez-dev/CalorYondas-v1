@@ -1,4 +1,4 @@
-import PagePlaceholder from "../components/Pageplaceholder";
+import PagePlaceholder from "../components/PagePlaceholder";
 
 const icon = (
   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -9,9 +9,6 @@ const icon = (
 const sections = [
   { title: "Movimiento oscilatorio", desc: "Definición, posición de equilibrio y vaivén." },
   { title: "Movimiento Armónico Simple (M.A.S.)", desc: "Período, frecuencia, amplitud y elongación." },
-  { title: "Ley de Hooke", desc: "Fuerza deformadora y constante del resorte." },
-  { title: "Expresiones matemáticas", desc: "Velocidad, aceleración y energía en el M.A.S." },
-  { title: "Asociación de resortes", desc: "Resortes en serie y en paralelo." },
   { title: "Péndulo simple", desc: "Leyes del péndulo y período de oscilación." },
 ];
 
