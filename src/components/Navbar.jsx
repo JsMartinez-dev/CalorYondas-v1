@@ -39,6 +39,16 @@ const NAV_ITEMS = [
     ),
     description: "Práctica guiada",
   },
+  {
+    id: "test",
+    label: "Test Interactivo",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 9h.01M15 9h.01M9 15h6M8 3h8a2 2 0 012 2v14a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"/>
+      </svg>
+    ),
+    description: "Evaluación de conocimientos",
+  },
 ];
 
 export default function Navbar({ activePage, onNavigate }) {
