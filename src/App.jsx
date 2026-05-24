@@ -4,12 +4,14 @@ import MarcoConceptual from "./pages/MarcoConceptual";
 import EjemplosIngenieria from "./pages/EjemplosIngenieria";
 import Laboratorio from "./pages/Laboratorio";
 import Ejercicios from "./pages/Ejercicios";
+import TestInteractivo from "./pages/TestInteractivo";
 
 const PAGES = {
   marco: MarcoConceptual,
   ejemplos: EjemplosIngenieria,
   laboratorio: Laboratorio,
   ejercicios: Ejercicios,
+  test: TestInteractivo,
 };
 
 export default function App() {

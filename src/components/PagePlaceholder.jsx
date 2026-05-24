@@ -10,7 +10,7 @@ export default function PagePlaceholder({ icon, title, subtitle, sections = [] }
       {sections.length > 0 && (
         <div className="placeholder-sections">
           {sections.map((s, i) => (
-            <div key={i} className="placeholder-section-card">
+            <div key={i} className="placeholder-section-card" onClick={s.onClick} style={{ cursor: 'pointer' }}>
               <div className="psc-number">0{i + 1}</div>
               <div className="psc-body">
                 <h3 className="psc-title">{s.title}</h3>
