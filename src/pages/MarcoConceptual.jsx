@@ -27,7 +27,7 @@ const content = {
       <p>El movimiento oscilatorio es un movimiento periódico en el que un cuerpo se mueve de un lado a otro en torno a una posición de equilibrio. Es un fenómeno fundamental en la física, presente en sistemas que van desde el péndulo de un reloj hasta las vibraciones de los átomos en un sólido.</p>
       <h3>Condición de restauración</h3>
       <p>Para que ocurra un movimiento oscilatorio, debe existir una <strong>fuerza restauradora</strong> que siempre apunte hacia la posición de equilibrio. Esta fuerza es la responsable de que el cuerpo regrese a su posición central después de haber sido desplazado.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Federpendel.gif" alt="Fuerza restauradora en un sistema masa-resorte" style={{maxWidth: "300px", display: "block", margin: "20px auto"}}/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Federpendel.gif" alt="Fuerza restauradora en un sistema masa-resorte" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
     </>
   ),
   "mas": (
@@ -44,7 +44,7 @@ const content = {
         <li><strong>t</strong>: Tiempo.</li>
         <li><strong>&phi;<sub>0</sub></strong>: Fase inicial.</li>
       </ul>
-      <img src="https://i.pinimg.com/originals/ec/f5/ba/ecf5ba982ff3de01fb074a8dc58d6715.gif" alt="Gráfica sinusoidal del M.A.S." style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+      <img src="https://i.pinimg.com/originals/ec/f5/ba/ecf5ba982ff3de01fb074a8dc58d6715.gif" alt="Gráfica sinusoidal del M.A.S." style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
     </>
   ),
   "conceptos-fundamentales": (
@@ -57,7 +57,7 @@ const content = {
           <MathJax>
             {"$$x(t) = A \\cos(\\omega t + \\phi_0)$$"}
           </MathJax>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Simple_Pendulum_Oscillator.gif" alt="Ocillator" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://examtimeassets.s3.amazonaws.com/uploads/node/image/45919027/desktop_437bebd6-96c7-4afd-bf70-4894099a46b1.gif" alt="Ocillator" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
         <div style={{ border: '1px solid #ddd', padding: '1rem', borderRadius: '8px' }}>
           <h4>Posición de equilibrio</h4>
@@ -65,7 +65,7 @@ const content = {
           <MathJax>
             {"$$x = 0, \\quad F_{neta} = 0$$"}
           </MathJax>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Simple_Harmonic_Motion_Orbit.gif" alt="Ocillator" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Simple_Harmonic_Motion_Orbit.gif" alt="Ocillator" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
         <div style={{ border: '1px solid #ddd', padding: '1rem', borderRadius: '8px' }}>
           <h4>Elongación (x)</h4>
@@ -73,7 +73,7 @@ const content = {
           <MathJax>
             {"$$x = A \\sin(\\omega t + \\phi_0)$$"}
           </MathJax>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Muelle.gif" alt="Ocillator" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/756b4d40-a6f8-40b6-98cd-fc9c692aa73b" alt="Ocillator" style={{width: "550px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
         <div style={{ border: '1px solid #ddd', padding: '1rem', borderRadius: '8px' }}>
           <h4>Amplitud (A)</h4>
@@ -81,7 +81,7 @@ const content = {
           <MathJax>
             {"$$|x|_{max} = A$$"}
           </MathJax>
-          <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/50a9f677-34e1-4b25-8077-42117f7c443c" alt="Ocillator" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/50a9f677-34e1-4b25-8077-42117f7c443c" alt="Ocillator" style={{width: "550px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
         <div style={{ border: '1px solid #ddd', padding: '1rem', borderRadius: '8px' }}>
           <h4>Período (T)</h4>
@@ -89,7 +89,7 @@ const content = {
           <MathJax>
             {"$$T = \\frac{1}{f} = \\frac{2\\pi}{\\omega}$$"}
           </MathJax>
-          <img src="https://www2.montes.upm.es/dptos/digfa/cfisica/ondas/armonicas_files/periodo.gif" alt="Peridodo" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Wave_period.gif" alt="Peridodo" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
         <div style={{ border: '1px solid #ddd', padding: '1rem', borderRadius: '8px' }}>
           <h4>Frecuencia (f)</h4>
@@ -97,7 +97,7 @@ const content = {
           <MathJax>
             {"$$f = \\frac{1}{T} = \\frac{\\omega}{2\\pi}$$"}
           </MathJax>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/CambioFrec.gif" alt="Ocillator" style={{maxWidth: "400px", display: "block", margin: "20px auto"}}/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/CambioFrec.gif" alt="Ocillator" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
         </div>
       </div>
     </>
@@ -115,7 +115,7 @@ const content = {
         <li><strong>x</strong>: Desplazamiento desde la posición de equilibrio.</li>
       </ul>
       <p>El signo negativo indica que la fuerza siempre se opone al desplazamiento, es decir, es una fuerza restauradora.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Mass_Spring_System_Undamped_case_Simple_harmonic_motion.gif" alt="Sistema masa-resorte" style={{maxWidth: "300px", display: "block", margin: "20px auto"}}/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Mass_Spring_System_Undamped_case_Simple_harmonic_motion.gif" alt="Sistema masa-resorte" style={{width: "550px", height: "300px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
     </>
   ),
   "periodo-masa-resorte": (
@@ -146,7 +146,7 @@ const content = {
         {"$$a = -\\frac{4\\pi^2}{T^2}x$$"}
       </MathJax>
       <p>La aceleración es máxima en los extremos y nula en la posición de equilibrio. Siempre apunta en dirección opuesta a la elongación.</p>
-      <img src="https://www.fisicalab.com/sites/all/files/contenidos/mas/ej1188_mas.png" alt="Sistema masa-resorte" style={{maxWidth: "300px", display: "block", margin: "20px auto"}}/>
+      <img src="https://www.fisicalab.com/sites/all/files/contenidos/mas/ej1188_mas.png" alt="Sistema masa-resorte" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
     </>
   ),
   "asociacion-resortes": (
@@ -164,14 +164,14 @@ misma deformación.</p>
       <MathJax>
         {"$$K_{eq} = k_1 + k_2 + k_3 + ...$$"}
       </MathJax>
-      <img src="http://tesla.us.es/wiki/images/2/21/Asociacionesmuelles.png" alt="Resortes en paralelo" style={{maxWidth: "250px", display: "block", margin: "20px auto"}}/>
+      <img src="http://tesla.us.es/wiki/images/2/21/Asociacionesmuelles.png" alt="Resortes en paralelo" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
     </>
   ),
   "pendulo-simple": (
     <>
       <h2>Péndulo Simple</h2>
       <p>Un péndulo simple es un modelo idealizado que consiste en una masa puntual suspendida de un hilo de longitud fija e inextensible.</p>
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkK3dynLLd4QhrXGILUM23Rzt_6fvSCvzDkjQCMiP2oMzp4bqTiR6e9I8XbkMuLCa6b59lPZXpqBxBBxtkLaJ3GaAtYUVDEagMojRQxc5sCTkT62LZjdqpfxT9PpzBb1X73ngYd8rukz5cpCoH3Oi49igRVlyNZRt2tTRB9Xw92B4b1YY2GMTktsFzGA/s537/fig7.gif" alt="Péndulo simple" style={{maxWidth: "250px", display: "block", margin: "20px auto"}}/>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkK3dynLLd4QhrXGILUM23Rzt_6fvSCvzDkjQCMiP2oMzp4bqTiR6e9I8XbkMuLCa6b59lPZXpqBxBBxtkLaJ3GaAtYUVDEagMojRQxc5sCTkT62LZjdqpfxT9PpzBb1X73ngYd8rukz5cpCoH3Oi49igRVlyNZRt2tTRB9Xw92B4b1YY2GMTktsFzGA/s537/fig7.gif" alt="Péndulo simple" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <h3>Período del Péndulo Simple</h3>
       <p>Para oscilaciones pequeñas, el período de un péndulo simple es:</p>
       <MathJax>
