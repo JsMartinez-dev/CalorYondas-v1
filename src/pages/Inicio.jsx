@@ -9,6 +9,9 @@ export default function Inicio() {
     "Ali David Valle Mancilla",
     "Yulia Cabana Olivella",
     "Omar Andres Rojas Arango",
+    "Carlos Alberto Teran Lizcano",
+    "Alejandro Smith Cano Pezzano",
+    "Gabriel González Silva"
   ];
 
   return (

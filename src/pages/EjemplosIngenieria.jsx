@@ -16,6 +16,7 @@ const sections = [
   { id: "marino", title: "Ingeniería Marino Costera", desc: "Propagación de olas, tsunamis y acústica submarina." },
   { id: "industrial", title: "Ingeniería Industrial", desc: "Vibraciones en maquinaria, control de ruido y optimización de procesos." },
   { id: "sistemas", title: "Ingeniería de Sistemas", desc: "Procesamiento de señales, comunicaciones y transmisión de datos." },
+  { id: "agronomica", title: "Ingeniería Agronómica", desc: "Cosecha y maquinaria, vibraciones de cribas y eficiencia de separación." },
 ];
 
 const content = {
@@ -23,7 +24,7 @@ const content = {
     <>
       <h2>Ingeniería Civil: Análisis Sísmico de Edificios</h2>
       <h3>Aplicación: Diseño Antisísmico</h3>
-      <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcG4l4a_2hfzAcblm9pBTGdrP9xLEh2GMbVUs14fMHJyPmxbQLzXxn8BmBpQgHCTKllyP4FkVMyD21NpbQx56S3VWdoojpHTWp2RHk7RPFWx5Ef7jqRhoEq9OwFD5JSjs2K9SEmWARu6xZEPtWAvmwandJH?key=_t-wAURFVKZIVZj__dE2-A" alt="Edificio con daño sísmico" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcG4l4a_2hfzAcblm9pBTGdrP9xLEh2GMbVUs14fMHJyPmxbQLzXxn8BmBpQgHCTKllyP4FkVMyD21NpbQx56S3VWdoojpHTWp2RHk7RPFWx5Ef7jqRhoEq9OwFD5JSjs2K9SEmWARu6xZEPtWAvmwandJH?key=_t-wAURFVKZIVZj__dE2-A" alt="Edificio con daño sísmico" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Los edificios están diseñados para resistir vibraciones sísmicas modelando su comportamiento como un sistema de masa-resorte con amortiguamiento. Durante un terremoto, el edificio oscila con una frecuencia característica que depende de su masa y rigidez.</p>
       <p><strong>Ejemplo práctico:</strong> Un edificio de oficinas con masa total de 50,000 kg tiene una rigidez lateral equivalente de 250,000 N/m. Su período natural de vibración se calcula para evitar resonancia con el terreno.</p>
       <MathJax>
@@ -40,7 +41,7 @@ const content = {
     <>
       <h2>Ingeniería Mecánica: Sistema de Amortiguación Vehicular</h2>
       <h3>Aplicación: Suspensión de Vehículos</h3>
-      <img src="https://images.pexels.com/photos/10912797/pexels-photo-10912797.jpeg" alt="Sistema de suspensión" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://images.pexels.com/photos/10912797/pexels-photo-10912797.jpeg" alt="Sistema de suspensión" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Los sistemas de suspensión en automóviles utilizan amortiguadores y resortes que actúan como un sistema masa-resorte amortiguado. El objetivo es minimizar las vibraciones transmitidas al vehículo mientras mantiene el contacto con el terreno.</p>
       <p><strong>Ejemplo práctico:</strong> Un automóvil de 1,500 kg con constante de resorte de 50,000 N/m en cada rueda (4 ruedas en paralelo: 200,000 N/m total).</p>
       <MathJax>
@@ -58,7 +59,7 @@ const content = {
     <>
       <h2>Ingeniería Electrónica: Circuito LC Resonante</h2>
       <h3>Aplicación: Filtros y Sintonizadores de Frecuencia</h3>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Tuned_circuit_animation_3.gif" alt="Circuito LC" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Tuned_circuit_animation_3.gif" alt="Circuito LC" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Los circuitos LC (inductor-capacitor) son componentes fundamentales en radios, televisores y sistemas de comunicación. Oscilan a una frecuencia de resonancia específica que depende de los valores de inductancia y capacitancia.</p>
       <p><strong>Ejemplo práctico:</strong> Un circuito LC para sintonizar una estación de radio FM (100 MHz) requiere componentes específicos.</p>
       <h4>Frecuencia de Resonancia</h4>
@@ -76,7 +77,7 @@ const content = {
     <>
       <h2>Ingeniería Marino Costera: Propagación de Olas Oceánicas</h2>
       <h3>Aplicación: Predicción de Tsunamis</h3>
-      <img src="https://www.shutterstock.com/image-illustration/tsunamis-generated-by-submarine-earthquakes-600w-490135354.jpg" alt="Tsunami" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://www.shutterstock.com/image-illustration/tsunamis-generated-by-submarine-earthquakes-600w-490135354.jpg" alt="Tsunami" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Las olas océanicas son oscilaciones de la superficie del agua causadas por el viento, mareas o terremotos submarinos. Su comportamiento se puede modelar como ondas sinusoidales con períodos y longitudes de onda característicos.</p>
       <p><strong>Ejemplo práctico:</strong> Un tsunami generado por un terremoto submarino tiene un período típico de 20 minutos y una longitud de onda de aproximadamente 200 km.</p>
       <h4>Velocidad de Propagación del Tsunami</h4>
@@ -94,7 +95,7 @@ const content = {
     <>
       <h2>Ingeniería Industrial: Control de Vibraciones en Maquinaria</h2>
       <h3>Aplicación: Aisladores de Vibración</h3>
-      <img src="https://www.aguamarket.com/sql/productos/fotos/n1244741894_30078622_6688.jpg" alt="Aislador de vibración" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://www.aguamarket.com/sql/productos/fotos/n1244741894_30078622_6688.jpg" alt="Aislador de vibración" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Las máquinas rotatorias (bombas, motores, compresores) generan vibraciones que pueden dañar equipos y estructuras. Los aisladores de vibración utilizan principios de resonancia para proteger la maquinaria.</p>
       <p><strong>Ejemplo práctico:</strong> Un motor que gira a 1,800 RPM (30 Hz) tiene una masa de 100 kg. Se instala sobre 4 aisladores de elastómero con rigidez total de 50,000 N/m.</p>
       <h4>Frecuencia Natural del Sistema</h4>
@@ -113,7 +114,7 @@ const content = {
     <>
       <h2>Ingeniería de Sistemas: Procesamiento de Señales de Audio</h2>
       <h3>Aplicación: Síntesis de Audio Digital</h3>
-      <img src="https://cdn.svantek.com/wp-content/uploads/2024/03/vibration-frequency-1024x745.png.avif" alt="Armónicos de una onda" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://cdn.svantek.com/wp-content/uploads/2024/03/vibration-frequency-1024x745.png.avif" alt="Armónicos de una onda" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
       <p>Los sistemas de procesamiento de audio utilizan oscilaciones armónicas para generar, filtrar y analizar señales de sonido. La síntesis de Fourier permite representar cualquier sonido como suma de ondas sinusoidales.</p>
       <p><strong>Ejemplo práctico:</strong> Una nota musical "La" tiene una frecuencia fundamental de 440 Hz. Al tocar una guitarra, se generan armónicos en múltiplos de esta frecuencia.</p>
       <h4>Frecuencia Fundamental y Armónicos</h4>
@@ -131,6 +132,52 @@ const content = {
         {"$$T = \\frac{1}{f} = \\frac{1}{440} \\approx 2.27 \\text{ milisegundos}$$"}
       </MathJax>
       <p>La combinación de estos armónicos con diferentes amplitudes determina el timbre único de cada instrumento musical.</p>
+    </>
+  ),
+  "agronomica": (
+    <>
+      <h2>Ingeniería Agronómica: Cosecha & Maquinaria</h2>
+      <h3>Aplicación: Vibración de Cribas en Trilladoras</h3>
+      <img src="https://www.deere.com.mx/assets/images/region-3/products/combines/Large1366x768.jpg" alt="Trilladora" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
+      <p>Las cribas vibratorias de las trilladoras combinadas operan bajo el principio del M.A.S. La malla oscila para separar el grano de la paja. Si la masa de la criba es m y el sistema de resortes tiene constante K, el período de vibración óptimo determina la eficiencia de separación.</p>
+      <MathJax>
+        {"$$T = 2\\pi \\sqrt{\\frac{m}{K}}$$"}
+      </MathJax>
+      <p>Un ingeniero agrónomo debe seleccionar la combinación m-K adecuada para maximizar la separación sin dañar el grano.</p>
+      <h4>Ejemplo Práctico</h4>
+      <p><strong>Situación:</strong> Una criba de trilladora tiene masa m = 8 kg y constante del resorte K = 200 N/m. ¿Cuál es su período de vibración y cuántas oscilaciones hace por minuto?</p>
+      <h4>PASO 1 — Período</h4>
+      <MathJax>
+        {"$$T = 2\\pi \\sqrt{\\frac{m}{K}}$$"}
+      </MathJax>
+      <MathJax>
+        {"$$T = 2\\pi \\sqrt{\\frac{8}{200}}$$"}
+      </MathJax>
+      <MathJax>
+        {"$$T = 2\\pi \\sqrt{0.04}$$"}
+      </MathJax>
+      <MathJax>
+        {"$$T = 2\\pi \\times 0.2$$"}
+      </MathJax>
+      <MathJax>
+        {"$$T \\approx 1.257 \\text{ s}$$"}
+      </MathJax>
+      <h4>PASO 2 — Frecuencia</h4>
+      <MathJax>
+        {"$$f = \\frac{1}{T} = \\frac{1}{1.257}$$"}
+      </MathJax>
+      <MathJax>
+        {"$$f \\approx 0.795 \\text{ Hz}$$"}
+      </MathJax>
+      <h4>PASO 3 — Oscilaciones por Minuto</h4>
+      <MathJax>
+        {"$$f_{\\min} = 0.795 \\times 60$$"}
+      </MathJax>
+      <MathJax>
+        {"$$f_{\\min} \\approx 47.7 \\text{ oscilaciones/min}$$"}
+      </MathJax>
+      <h4>Interpretación</h4>
+      <p>A ~48 ciclos por minuto, la criba separa el grano de la paja de forma eficiente. Si la frecuencia fuera demasiado alta, el impacto dañaría el grano; demasiado baja, la separación sería incompleta.</p>
     </>
   ),
 };
