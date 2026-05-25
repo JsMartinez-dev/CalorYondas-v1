@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Inicio from "./pages/Inicio";
 import MarcoConceptual from "./pages/MarcoConceptual";
 import EjemplosIngenieria from "./pages/EjemplosIngenieria";
 import Laboratorio from "./pages/Laboratorio";
@@ -7,6 +8,7 @@ import Ejercicios from "./pages/Ejercicios";
 import TestInteractivo from "./pages/TestInteractivo";
 
 const PAGES = {
+  inicio: Inicio,
   marco: MarcoConceptual,
   ejemplos: EjemplosIngenieria,
   laboratorio: Laboratorio,
@@ -15,7 +17,7 @@ const PAGES = {
 };
 
 export default function App() {
-  const [activePage, setActivePage] = useState("marco");
+  const [activePage, setActivePage] = useState("inicio");
   const PageComponent = PAGES[activePage];
 
   return (
