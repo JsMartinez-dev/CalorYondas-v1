@@ -23,7 +23,7 @@ const content = {
     <>
       <h2>Ingeniería Civil: Análisis Sísmico de Edificios</h2>
       <h3>Aplicación: Diseño Antisísmico</h3>
-      <img src="https://images.pexels.com/photos/18940351/pexels-photo-18940351.jpeg" alt="Edificio con daño sísmico" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
+      <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcG4l4a_2hfzAcblm9pBTGdrP9xLEh2GMbVUs14fMHJyPmxbQLzXxn8BmBpQgHCTKllyP4FkVMyD21NpbQx56S3VWdoojpHTWp2RHk7RPFWx5Ef7jqRhoEq9OwFD5JSjs2K9SEmWARu6xZEPtWAvmwandJH?key=_t-wAURFVKZIVZj__dE2-A" alt="Edificio con daño sísmico" style={{maxWidth: "350px", display: "block", margin: "20px auto"}}/>
       <p>Los edificios están diseñados para resistir vibraciones sísmicas modelando su comportamiento como un sistema de masa-resorte con amortiguamiento. Durante un terremoto, el edificio oscila con una frecuencia característica que depende de su masa y rigidez.</p>
       <p><strong>Ejemplo práctico:</strong> Un edificio de oficinas con masa total de 50,000 kg tiene una rigidez lateral equivalente de 250,000 N/m. Su período natural de vibración se calcula para evitar resonancia con el terreno.</p>
       <MathJax>
