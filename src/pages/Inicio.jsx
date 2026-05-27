@@ -11,7 +11,9 @@ export default function Inicio() {
     "Omar Andres Rojas Arango",
     "Carlos Alberto Teran Lizcano",
     "Alejandro Smith Cano Pezzano",
-    "Gabriel González Silva"
+    "Gabriel González Silva",
+    "Daniel Miranda Morales",
+    "Andrés Felipe Chacon Saucedo"
   ];
 
   return (
