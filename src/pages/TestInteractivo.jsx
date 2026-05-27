@@ -224,7 +224,7 @@ export default function TestInteractivo() {
   return (
     <div className="test-container">
       <div className="test-header">
-        <h1 color="black">Test Interactivo: Oscilaciones y Movimiento Armónico Simple</h1>
+        <h1 >Test Interactivo: Oscilaciones y Movimiento Armónico Simple</h1>
         <div className="progress-bar">
           <div
             className="progress-fill"

@@ -17,6 +17,7 @@ const sections = [
   { id: "industrial", title: "Ingeniería Industrial", desc: "Vibraciones en maquinaria, control de ruido y optimización de procesos." },
   { id: "sistemas", title: "Ingeniería de Sistemas", desc: "Procesamiento de señales, comunicaciones y transmisión de datos." },
   { id: "agronomica", title: "Ingeniería Agronómica", desc: "Cosecha y maquinaria, vibraciones de cribas y eficiencia de separación." },
+  { id: "ambiental", title: "Ingeniería Ambiental y Sanitaria", desc: "Plantas de tratamiento de agua, vibraciones de bombas y sistemas de tuberías." },
 ];
 
 const content = {
@@ -178,6 +179,25 @@ const content = {
       </MathJax>
       <h4>Interpretación</h4>
       <p>A ~48 ciclos por minuto, la criba separa el grano de la paja de forma eficiente. Si la frecuencia fuera demasiado alta, el impacto dañaría el grano; demasiado baja, la separación sería incompleta.</p>
+    </>
+  ),
+  "ambiental": (
+    <>
+      <h2>Ingeniería Ambiental y Sanitaria: Plantas de Tratamiento de Agua</h2>
+      <h3>Aplicación: Control de Vibraciones en Sistemas de Bombeo</h3>
+      <img src="https://grupohidraulica.com/wp-content/uploads/2023/03/PTAR-aguas-residuales-1536x944-1.jpeg" alt="Planta de tratamiento de agua" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
+      <p>Las plantas de tratamiento de agua utilizan sistemas de tuberías y bombas que generan vibraciones mecánicas. Para evitar daños estructurales y fallas en los equipos, estos sistemas se modelan como un sistema masa-resorte con amortiguamiento. Cuando una bomba funciona, produce oscilaciones con una frecuencia característica que depende de la masa del sistema y de la rigidez de los soportes.</p>
+      <p><strong>Ejemplo práctico:</strong> Una bomba de agua de una planta de tratamiento tiene una masa total de 200 kg y está sostenida por un sistema con una rigidez equivalente de 80,000 N/m. Su período natural de vibración se calcula para evitar resonancia con las vibraciones del motor.</p>
+      <h4>Período Natural del Sistema</h4>
+      <MathJax>
+        {"$$T = 2\\pi\\sqrt{\\frac{m}{k}} = 2\\pi\\sqrt{\\frac{200}{80000}} \\approx 0.31 \\text{ s}$$"}
+      </MathJax>
+      <p>Si la frecuencia de operación de la bomba coincide con el período natural del sistema, ocurre resonancia y las vibraciones aumentan, causando desgaste acelerado, ruido excesivo y posibles daños en las tuberías.</p>
+      <h4>Frecuencia Natural del Sistema</h4>
+      <MathJax>
+        {"$$f = \\frac{1}{T} = \\frac{1}{0.31} \\approx 3.2 \\text{ Hz}$$"}
+      </MathJax>
+      <p>Por esta razón, en ingeniería ambiental y sanitaria se analizan las vibraciones para garantizar el correcto funcionamiento de las plantas de tratamiento y prolongar la vida útil de los equipos.</p>
     </>
   ),
 };
