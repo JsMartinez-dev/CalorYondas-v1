@@ -10,9 +10,7 @@ const icon = (
 );
 
 const sections = [
-  { id: "civil", title: "Ingeniería Civil", desc: "Análisis sísmico, puentes colgantes y vibraciones estructurales." },
-  { id: "mecanica", title: "Ingeniería Mecánica", desc: "Sistemas de amortiguación, motores y resonancia mecánica." },
-  { id: "electronica", title: "Ingeniería Electrónica", desc: "Circuitos LC, filtros y osciladores de cuarzo." },
+  { id: "electronica", title: "Ingeniería Electrónica: Fuente de Alimentación", desc: "Transformación de AC a DC, rectificación, filtrado y regulación de voltaje." },
   { id: "marino", title: "Ingeniería Marino Costera", desc: "Propagación de olas, tsunamis y acústica submarina." },
   { id: "industrial", title: "Ingeniería Industrial", desc: "Vibraciones en maquinaria, control de ruido y optimización de procesos." },
   { id: "sistemas", title: "Ingeniería de Sistemas", desc: "Procesamiento de señales, comunicaciones y transmisión de datos." },
@@ -21,57 +19,75 @@ const sections = [
 ];
 
 const content = {
-  "civil": (
-    <>
-      <h2>Ingeniería Civil: Análisis Sísmico de Edificios</h2>
-      <h3>Aplicación: Diseño Antisísmico</h3>
-      <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcG4l4a_2hfzAcblm9pBTGdrP9xLEh2GMbVUs14fMHJyPmxbQLzXxn8BmBpQgHCTKllyP4FkVMyD21NpbQx56S3VWdoojpHTWp2RHk7RPFWx5Ef7jqRhoEq9OwFD5JSjs2K9SEmWARu6xZEPtWAvmwandJH?key=_t-wAURFVKZIVZj__dE2-A" alt="Edificio con daño sísmico" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
-      <p>Los edificios están diseñados para resistir vibraciones sísmicas modelando su comportamiento como un sistema de masa-resorte con amortiguamiento. Durante un terremoto, el edificio oscila con una frecuencia característica que depende de su masa y rigidez.</p>
-      <p><strong>Ejemplo práctico:</strong> Un edificio de oficinas con masa total de 50,000 kg tiene una rigidez lateral equivalente de 250,000 N/m. Su período natural de vibración se calcula para evitar resonancia con el terreno.</p>
-      <MathJax>
-        {"$$T = 2\\pi\\sqrt{\\frac{m}{k}} = 2\\pi\\sqrt{\\frac{50000}{250000}} \\approx 2.81 \\text{ segundos}$$"}
-      </MathJax>
-      <p>Si la frecuencia del sismo coincide con el período natural del edificio, ocurre resonancia y amplificación de vibraciones, causando daños estructurales graves.</p>
-      <h4>Frecuencia Natural del Edificio</h4>
-      <MathJax>
-        {"$$f = \\frac{1}{T} = \\frac{1}{2.81} \\approx 0.36 \\text{ Hz}$$"}
-      </MathJax>
-    </>
-  ),
-  "mecanica": (
-    <>
-      <h2>Ingeniería Mecánica: Sistema de Amortiguación Vehicular</h2>
-      <h3>Aplicación: Suspensión de Vehículos</h3>
-      <img src="https://images.pexels.com/photos/10912797/pexels-photo-10912797.jpeg" alt="Sistema de suspensión" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
-      <p>Los sistemas de suspensión en automóviles utilizan amortiguadores y resortes que actúan como un sistema masa-resorte amortiguado. El objetivo es minimizar las vibraciones transmitidas al vehículo mientras mantiene el contacto con el terreno.</p>
-      <p><strong>Ejemplo práctico:</strong> Un automóvil de 1,500 kg con constante de resorte de 50,000 N/m en cada rueda (4 ruedas en paralelo: 200,000 N/m total).</p>
-      <MathJax>
-        {"$$T = 2\\pi\\sqrt{\\frac{m}{k}} = 2\\pi\\sqrt{\\frac{1500}{200000}} \\approx 0.54 \\text{ segundos}$$"}
-      </MathJax>
-      <p>La frecuencia de oscilación vertical es aproximadamente 1.85 Hz, lo que proporciona una conducción suave en caminos irregulares.</p>
-      <h4>Velocidad Máxima del Vehículo</h4>
-      <p>Cuando un automóvil atraviesa irregularidades del camino a cierta velocidad, puede alcanzar resonancia. La velocidad crítica depende de la longitud de la ondulación del terreno:</p>
-      <MathJax>
-        {"$$v_{critica} = f \\times \\lambda = 1.85 \\text{ Hz} \\times 5 \\text{ m} = 9.25 \\text{ m/s} \\approx 33 \\text{ km/h}$$"}
-      </MathJax>
-    </>
-  ),
   "electronica": (
     <>
-      <h2>Ingeniería Electrónica: Circuito LC Resonante</h2>
-      <h3>Aplicación: Filtros y Sintonizadores de Frecuencia</h3>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Tuned_circuit_animation_3.gif" alt="Circuito LC" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto"}}/>
-      <p>Los circuitos LC (inductor-capacitor) son componentes fundamentales en radios, televisores y sistemas de comunicación. Oscilan a una frecuencia de resonancia específica que depende de los valores de inductancia y capacitancia.</p>
-      <p><strong>Ejemplo práctico:</strong> Un circuito LC para sintonizar una estación de radio FM (100 MHz) requiere componentes específicos.</p>
-      <h4>Frecuencia de Resonancia</h4>
+      <h2>Ingeniería Electrónica: Fuente de Alimentación de Voltaje</h2>
+      <h3>Aplicación: Conversión de AC a DC</h3>
+      <img src="/Ejemplos_ingenieria/img/electronica1.png" alt="Transformador - Etapa de Transformación" style={{width: "550px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto", border: "2px solid #ccc"}}/>
+      <p>Una de las aplicaciones más usadas en la ingeniería electrónica es la de una fuente de alimentación de voltaje en la cual se toma una fuente AC para posteriormente pasarla a DC, siendo fundamental el uso de ondas en este proceso.</p>
+      <p>Para hacer que una fuente AC se convierta en una fuente DC se hacen 4 procesos:</p>
+      
+      <h4>1. Transformador</h4>
+      <p>Cuando la fuente de alimentación trabaja con corriente alterna (CA), se incorpora un transformador encargado de adecuar el voltaje de entrada al nivel requerido. Este componente puede disminuir o incrementar la tensión en función de la relación de espiras entre sus devanados y, adicionalmente, proporciona aislamiento eléctrico entre la red de suministro y el circuito, lo cual incrementa la seguridad del sistema.</p>
+      
+      <h4>2. Rectificador</h4>
+      <p>En esta fase, la corriente alterna se convierte en corriente continua mediante un puente rectificador compuesto por diodos. Según la configuración utilizada, la rectificación puede realizarse a media onda o a onda completa, utilizando ambas mitades del ciclo de CA. Sin embargo, la señal obtenida presenta un carácter pulsante, lo que hace necesario un proceso de filtrado posterior.</p>
+      
+      <h4>3. Filtrado</h4>
+      <p>Con el propósito de atenuar las variaciones en la señal rectificada, se emplean capacitores que cumplen la función de almacenar y liberar energía. Este procedimiento contribuye a obtener una corriente continua con mayor estabilidad. A mayor capacidad de almacenamiento del capacitor, menor será el nivel de rizado en la señal.</p>
+      
+      <h4>4. Regulador</h4>
+      <p>Esta etapa se encarga de mantener constante el voltaje de salida, compensando posibles fluctuaciones tanto en la entrada como en la carga conectada. Su funcionamiento se basa en comparar el valor de salida con un nivel de referencia para ajustar la energía suministrada. El proceso de regulación puede llevarse a cabo mediante técnicas lineales o conmutadas.</p>
+      
+      <h3>Práctica: Diseño de una Fuente de 12V y 120mA</h3>
+      
+      <h4>Etapa de Transformación</h4>
+      <p>El primer paso fue la selección del transformador encargado de reducir el voltaje de la red eléctrica (110 V AC) a un valor adecuado. Se empleó un transformador con secundarios de 9 V AC. Con el fin de obtener una salida final de 12 V en DC, se conectaron dos secundarios de 9 V en serie, logrando así una tensión de 18 V AC de entrada.</p>
+      <p>Este valor fue elegido de manera que, tras las pérdidas producidas en el proceso de rectificación, filtrado y regulación, el sistema pudiera entregar los 12 V DC requeridos. Además, el transformador proporcionó aislamiento eléctrico entre la red y el circuito, incrementando la seguridad del sistema.</p>
+      
+      <img src="/Ejemplos_ingenieria/img/electronica2.png" alt="Transformador - Conexión de secundarios" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto", border: "2px solid #ccc"}}/>
+      <h4>Etapa de Rectificación</h4>
+      <p>Para convertir la señal alterna en continua se utilizó un puente rectificador de onda completa conformado por cuatro diodos de silicio 1N4001. Este tipo de configuración permite aprovechar ambos semiciclos de la señal alterna, incrementando la eficiencia y reduciendo el rizado respecto a la rectificación de media onda.</p>
+      <p><strong>Voltaje pico rectificado:</strong></p>
       <MathJax>
-        {"$$f_0 = \\frac{1}{2\\pi\\sqrt{LC}}$$"}
+        {"$$V_p(rect) = (V_{rms} - 1.4) \\cdot \\sqrt{2}$$"}
       </MathJax>
-      <p>Para sintonizar 100 MHz con L = 0.5 μH (microhenrios):</p>
       <MathJax>
-        {"$$C = \\frac{1}{(2\\pi f_0)^2 L} = \\frac{1}{(2\\pi \\times 10^8)^2 \\times 0.5 \\times 10^{-6}} \\approx 50.3 \\text{ pF}$$"}
+        {"$$V_p(rect) = (18\\text{ V} - 1.4\\text{ V}) \\cdot \\sqrt{2} \\approx 24\\text{ V}$$"}
       </MathJax>
-      <p>Este circuito permite que solo la frecuencia de 100 MHz pase sin atenuación, mientras filtra otras frecuencias.</p>
+      <p>A partir de este punto, la señal pasó a analizarse como voltaje en corriente continua, aunque todavía con un nivel considerable de rizado.</p>
+      
+      <h4>Etapa de Filtrado</h4>
+      <p>El filtrado se llevó a cabo mediante un capacitor electrolítico de 1000 µF / 35 V, encargado de suavizar las variaciones de voltaje que permanecen tras la rectificación. Este componente almacena y libera carga eléctrica, reduciendo el rizado de la señal.</p>
+      <p><strong>Cálculo del voltaje de rizado:</strong></p>
+      <MathJax>
+        {"$$V_r(pp) = \\frac{1}{f \\cdot R_L \\cdot C} \\cdot V_p(rect)$$"}
+      </MathJax>
+      <MathJax>
+        {"$$V_r(pp) = \\frac{1}{120\\text{ Hz} \\cdot 100\\text{ Ω} \\cdot 1000\\text{ µF}} \\cdot 25.4\\text{ V} \\approx 2.1\\text{ V}$$"}
+      </MathJax>
+      <p><strong>Capacitancia mínima requerida:</strong></p>
+      <MathJax>
+        {"$$C = \\frac{I}{f \\cdot V_r(pp)} = \\frac{120\\text{ mA}}{120\\text{ Hz} \\cdot 2.1\\text{ V}} \\approx 454\\text{ µF}$$"}
+      </MathJax>
+      <p>El capacitor elegido (1000 µF) supera con holgura este valor mínimo, lo cual asegura una señal continua mucho más estable.</p>
+      
+      <img src="/Ejemplos_ingenieria/img/electronica3.png" alt="Capacitor de Filtrado" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto", border: "2px solid #ccc"}}/>
+      <h4>Etapa de Regulación</h4>
+      <p>Para obtener un voltaje constante de 12 V DC, se empleó un diodo Zener de 12 V en paralelo con la carga. Este componente mantiene estable el voltaje de salida incluso frente a pequeñas variaciones en el voltaje de entrada o en la carga.</p>
+      <p><strong>Resistencia de carga (Ley de Ohm):</strong></p>
+      <MathJax>
+        {"$$R_L = \\frac{V}{I} = \\frac{12\\text{ V}}{0.12\\text{ A}} = 100\\text{ Ω}$$"}
+      </MathJax>
+      <p><strong>Resistencia en serie:</strong></p>
+      <MathJax>
+        {"$$R = \\left(\\frac{V_i \\cdot R_L}{V_L}\\right) - R_L$$"}
+      </MathJax>
+      <MathJax>
+        {"$$R = \\left(\\frac{24\\text{ V} \\cdot 100\\text{ Ω}}{12\\text{ V}}\\right) - 100\\text{ Ω} = 100\\text{ Ω}$$"}
+      </MathJax>
+      <p>Las resistencias seleccionadas fueron de 5 W, con el fin de soportar la potencia disipada y evitar daños por sobrecalentamiento. En esta etapa, el osciloscopio mostró una línea recta en la señal de salida, confirmando la estabilidad del voltaje regulado.</p>
+      <img src="/Ejemplos_ingenieria/img/electronica4.png" alt="Circuito con Capacitor de Filtrado" style={{width: "350px", height: "250px", objectFit: "cover", display: "block", margin: "20px auto", border: "2px solid #ccc"}}/>
     </>
   ),
   "marino": (

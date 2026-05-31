@@ -18,9 +18,9 @@ export default function Inicio() {
 
   return (
     <div className="inicio-page">
-      {/* Portada principal */}
+      {}
       <div className="portada-container">
-        {/* Icono de la universidad */}
+        {}
         <div className="universidad-logo">
           <div className="logo-placeholder">
               <img src="https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/Escudo-Color-Texto-azul-1-1024x1024.png" alt="Logo unimag" />
@@ -28,16 +28,16 @@ export default function Inicio() {
           <p className="logo-text">Universidad del Magdalena</p>
         </div>
 
-        {/* Contenido principal */}
+        {}
         <div className="contenido-portada">
-          {/* Título */}
+          {}
           <div className="titulo-section">
             <h1 className="titulo-principal">CALOR Y ONDAS</h1>
             <div className="subtitulo-divider"></div>
             <h2 className="subtitulo">Onda Expansiva</h2>
           </div>
 
-          {/* Integrantes */}
+          {}
           <section className="section-integrantes">
             <h3 className="section-titulo">Integrantes</h3>
             <div className="integrantes-list">
@@ -50,7 +50,7 @@ export default function Inicio() {
             </div>
           </section>
 
-          {/* Profesor */}
+          {}
           <section className="section-profesor">
             <h3 className="section-titulo">Profesor</h3>
             <div className="profesor-info">
@@ -59,7 +59,7 @@ export default function Inicio() {
           </section>
         </div>
 
-        {/* Créditos del Desarrollador */}
+        {}
         <div className="desarrollador-credits">
           <p className="credits-label">Desarrollado por</p>
           <div className="credits-content">

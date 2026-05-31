@@ -14,7 +14,6 @@ const icon = (
   </svg>
 );
 
-// ─── Datos de ejercicios ──────────────────────────────────────────────────
 const ejercicios = [
   {
     id: 1,
@@ -229,7 +228,6 @@ const ejercicios = [
   },
 ];
 
-// ─── Componente de tarjeta de ejercicio ─────────────────────────────────────
 const EjercicioCard = ({ ejercicio, onOpen }) => {
   return (
     <div className="ejercicio-card" onClick={() => onOpen(ejercicio)}>
@@ -241,7 +239,6 @@ const EjercicioCard = ({ ejercicio, onOpen }) => {
   );
 };
 
-// ─── Modal de ejercicio ───────────────────────────────────────────────────
 const EjercicioModal = ({ ejercicio, onClose }) => {
   return (
     <div className="ejercicio-modal-content">
@@ -325,7 +322,6 @@ const EjercicioModal = ({ ejercicio, onClose }) => {
   );
 };
 
-// ─── Componente principal ────────────────────────────────────────────────────
 export default function Ejercicios() {
   const [selectedEjercicio, setSelectedEjercicio] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -342,14 +338,14 @@ export default function Ejercicios() {
 
   return (
     <div className="ejercicios-page">
-      {/* Encabezado */}
+      {}
       <div className="ejercicios-header">
         <div className="header-icon">{icon}</div>
         <h1 className="header-title">Ejercicios Prácticos</h1>
         <p className="header-subtitle">Problemas paso a paso con soluciones detalladas y explicaciones didácticas</p>
       </div>
 
-      {/* Grid de ejercicios */}
+      {}
       <div className="ejercicios-grid">
         {ejercicios.map((ejercicio) => (
           <EjercicioCard
@@ -360,7 +356,7 @@ export default function Ejercicios() {
         ))}
       </div>
 
-      {/* Modal */}
+      {}
       <Modal show={modalOpen} onClose={handleCloseModal}>
         {selectedEjercicio && <EjercicioModal ejercicio={selectedEjercicio} onClose={handleCloseModal} />}
       </Modal>
